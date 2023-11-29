@@ -24,3 +24,19 @@ function validateName() {
     nameError.innerHTML = `<i class="fa-solid fa-check"></i>`
     return true
 }
+
+
+function validateEmail() {
+    const email = document.querySelector('#form__email__input').value;
+
+    if (email.length === 0) {
+        emailError.innerHTML = '<i class="bi bi-check-lg"></i>'
+        return false;
+    }
+    if (!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+        emailError.innerHTML = 'Zły email'
+        return false
+    }
+    emailError.innerHTML = `<i class="fa-solid fa-check"></i>`
+    return true
+}
