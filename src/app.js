@@ -3,16 +3,17 @@ const emailError = document.querySelector('#form__email__error')
 const messageError = document.querySelector('#form__message__error')
 const submitError = document.querySelector('#form__submit__error')
 
+// Name Validation
 function validateName() {
     const name = document.querySelector('#form__name__input').value
 
     if (name.length === 0) {
-        nameError.innerHTML = 'Podaj imię'
+        nameError.innerHTML = 'Give me your first and last name'
         return false
     }
 
     if (!name.match(/^[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ]+\s[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ]+$/)) {
-        nameError.innerHTML = 'Podaj cała imię'
+        nameError.innerHTML = 'Enter your full name'
         return false
     }
 
@@ -25,7 +26,7 @@ function validateName() {
     return true
 }
 
-
+// Email Validation
 function validateEmail() {
     const email = document.querySelector('#form__email__input').value;
 
