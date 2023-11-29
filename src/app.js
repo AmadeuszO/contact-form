@@ -35,7 +35,7 @@ function validateEmail() {
         return false;
     }
     if (!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
-        emailError.innerHTML = 'Zły email'
+        emailError.innerHTML = 'Bad email'
         return false
     }
     emailError.innerHTML = `<i class="fa-solid fa-check"></i>`
