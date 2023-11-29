@@ -36,3 +36,121 @@ body {
     align-items: center;
     justify-content: center;
 }
+wrapper {
+    width: 75%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.form {
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    border-radius: .8em;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form__header {
+    text-align: center;
+    padding: .8em;
+}
+
+.form__header__title {
+    letter-spacing: .5px;
+    font-size: 2em;
+    margin-bottom: .2em;
+}
+
+.form__header__page {
+    letter-spacing: .5px;
+    margin-bottom: .8em;
+}
+
+.form__row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: .6em;
+    color: #333;
+    margin: .5em 0;
+}
+
+.form__row input {
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: .3em 0;
+    margin: .6em 0;
+    border-bottom: 1px solid #999;
+    color: #333;
+    font-size: 1em;
+}
+
+.form__row label {
+    text-align: center;
+}
+
+.form__row span {
+    text-align: right;
+    font-size: .9em;
+    color: red;
+}
+
+.form__row textarea{
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: .3em 0;
+    margin: .6em 0;
+    border-bottom: 1px solid #999;
+    color: #333;
+    font-size: 1em;
+}
+
+
+.form button {
+    background: #141a34;
+    color: #fff;
+    font-size: 1em;
+    border-radius: 0.4em;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    padding: 10px 40px;
+    outline: 0;
+    cursor: pointer;
+    display: block;
+    margin: 0.7em auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.fa-paper-plane {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    font-size: 2em;
+    padding: .5em;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+::placeholder {
+    font-size: .9em;
+}
+
+
+#form__submit__error {
+    color: red;
+}
+
+.form__row span i {
+    color: seagreen;
+}
