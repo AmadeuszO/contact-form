@@ -248,9 +248,9 @@ body {
         background-color: slategray;
     }
 
-    .wrapper {
+
+    .form{
         width: 60%;
-        height: 75%;
     }
 
     .form__header__title {
@@ -306,3 +306,40 @@ body {
     }
 }
 
+@media (min-width: 1200px) {
+
+    body {
+        /*background-color: #141a34;*/
+        background-color: red;
+    }
+
+    .form{
+        width: 70%;
+    }
+
+    .form__row label {
+        width: 20%;
+    }
+
+    .form__row input {
+        width: 40%;
+    }
+
+    .form__row textarea {
+        width: 40%;
+    }
+
+    .form__row span {
+        width: 20%;
+        padding: 0 .5em;
+    }
+
+    .form__row textarea {
+        font-size: .7em;
+    }
+
+    .fa-paper-plane {
+        display: block;
+    }
+
+}
