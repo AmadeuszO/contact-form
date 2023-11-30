@@ -260,8 +260,11 @@ body {
     .form__header__page {
         margin-bottom: 0.2em;
     }
+    .form{
+        padding: 2em 0;
+    }
 
-    .form__row{
+    .form__row {
         display: -webkit-flex;
         display: flex;
         -webkit-flex-direction: row;
@@ -269,12 +272,11 @@ body {
         -webkit-flex-wrap: nowrap;
         flex-wrap: nowrap;
         -webkit-justify-content: space-around;
-        justify-content: space-around;
+        justify-content: center;
         -webkit-align-content: space-around;
         align-content: space-around;
         -webkit-align-items: baseline;
         align-items: baseline;
-    padding: 0;
     }
 
     .form__row label {
@@ -282,6 +284,10 @@ body {
     }
 
     .form__row input {
+        width: 40%;
+    }
+
+    .form__row textarea {
         width: 40%;
     }
 
@@ -295,7 +301,7 @@ body {
     }
 
     .fa-paper-plane {
-        display: none;
+        display: block;
     }
 }
 
