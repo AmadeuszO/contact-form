@@ -248,8 +248,7 @@ body {
         background-color: slategray;
     }
 
-
-    .form{
+    .form {
         width: 60%;
     }
 
@@ -261,7 +260,8 @@ body {
         margin-bottom: 0.2em;
         padding: 0 1em;
     }
-    .form{
+
+    .form {
         padding: 2em 0;
     }
 
@@ -313,7 +313,7 @@ body {
         background-color: red;
     }
 
-    .form{
+    .form {
         width: 70%;
     }
 

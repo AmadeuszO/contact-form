@@ -1,7 +1,17 @@
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwzOwo_OZG0MGEIP4SzX0F5_eL1oRCpR7sTsZE4nqiBKed3O7ZCLn1JdCpl4zPwJhSE/exec'
+const form = document.forms['contact']
+
 const nameError = document.querySelector('#form__name__error')
 const emailError = document.querySelector('#form__email__error')
 const messageError = document.querySelector('#form__message__error')
 const submitError = document.querySelector('#form__submit__error')
+
+
+form.addEventListener('submit', e => {
+    fetch(scriptURL, {method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+})
 
 // Name Validation
 function validateName() {
@@ -65,4 +75,8 @@ function validateForm() {
         }, 3000)
         return false;
     }
+}
+
+function clearForm() {
+    document.querySelector('#contact').reset();
 }
