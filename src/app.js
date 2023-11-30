@@ -48,7 +48,7 @@ const validateMessage = () => {
     const left = req - message.length;
 
     if (left > 0) {
-        messageError.innerHTML = left + 'too few characters';
+        messageError.innerHTML = left + ' too few characters';
         return false
     }
 

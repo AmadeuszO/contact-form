@@ -254,11 +254,12 @@ body {
     }
 
     .form__header__title {
-        font-size: 1em;
+        font-size: 2em;
     }
 
     .form__header__page {
         margin-bottom: 0.2em;
+        padding: 0 1em;
     }
     .form{
         padding: 2em 0;
