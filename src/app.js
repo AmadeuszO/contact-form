@@ -41,3 +41,28 @@ function validateEmail() {
     emailError.innerHTML = `<i class="fa-solid fa-check"></i>`
     return true
 }
+
+const validateMessage = () => {
+    const message = document.querySelector('#form__message__input').value;
+    const req = 5;
+    const left = req - message.length;
+
+    if (left > 0) {
+        messageError.innerHTML = left + 'too few characters';
+        return false
+    }
+
+    messageError.innerHTML = `<i class="fa-solid fa-check"></i>`
+    return true
+}
+
+function validateForm() {
+    if (!validateName() || !validateEmail() || !validateMessage()) {
+        submitError.style.display = 'block';
+        submitError.innerHTML = 'complete the data'
+        setTimeout(() => {
+            submitError.style.display = 'none';
+        }, 3000)
+        return false;
+    }
+}

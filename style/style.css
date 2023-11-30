@@ -36,7 +36,8 @@ body {
     align-items: center;
     justify-content: center;
 }
-wrapper {
+
+.wrapper {
     width: 75%;
     height: 85%;
     display: flex;
@@ -51,7 +52,7 @@ wrapper {
     width: 100%;
     border-radius: .8em;
     display: flex;
-    justify-content: end;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
 }
@@ -96,6 +97,7 @@ wrapper {
 
 .form__row label {
     text-align: center;
+    font-size: .8em;
 }
 
 .form__row span {
@@ -104,7 +106,7 @@ wrapper {
     color: red;
 }
 
-.form__row textarea{
+.form__row textarea {
     background: transparent;
     border: 0;
     outline: 0;
@@ -153,4 +155,70 @@ wrapper {
 
 .form__row span i {
     color: seagreen;
+}
+
+@media (min-width: 400px) {
+
+    body {
+        /*background-color: #141a34;*/
+        background-color: gray;
+
+    }
+
+    .wrapper {
+        width: 60%;
+        height: 75%;
+    }
+
+    .form__header {
+    }
+
+    .form__header__title {
+        font-size: 1em;
+    }
+
+    .form__header__page {
+        margin-bottom: 0.2em;
+    }
+
+    .form__row {
+
+    }
+
+    .form__row input {
+        font-size: .7em;
+    }
+
+    .form__row label {
+        font-size: .7em;
+    }
+
+    .form__row span {
+        font-size: .7em;
+    }
+
+    .form__row textarea {
+        font-size: .7em;
+    }
+
+
+    .form button {
+
+    }
+
+    .fa-paper-plane {
+        display: none;
+    }
+
+    ::placeholder {
+
+    }
+
+
+    #form__submit__error {
+
+    }
+
+    .form__row span i {
+    }
 }
