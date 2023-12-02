@@ -376,7 +376,7 @@ body {
         text-align: center;
     }
 
-    .fa-solid {
+    #form__name__error .fa-solid {
         display: inline;
         color: seagreen;
     }
