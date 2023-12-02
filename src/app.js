@@ -77,6 +77,6 @@ function validateForm() {
     }
 }
 
-function clearForm() {
+const clearForm = () => {
     document.querySelector('#contact').reset();
 }
