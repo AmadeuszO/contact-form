@@ -146,9 +146,6 @@ body {
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     color: #141a34;
-}
-
-.fa-solid {
     display: none;
 }
 
@@ -156,14 +153,13 @@ body {
     font-size: .9em;
 }
 
-
 #form__submit__error {
     color: red;
 }
 
-.form__message__error .fa-check {
+.form__row span i  {
     color: seagreen;
-    font-size: 2em;
+    font-size: .9em;
 }
 
 @media (min-width: 400px) {
@@ -195,6 +191,10 @@ body {
 
     .form__row textarea {
         font-size: .7em;
+    }
+    #form__name__error .fa-solid {
+        display: inline;
+        color: seagreen;
     }
 }
 
@@ -262,6 +262,10 @@ body {
 
     .form button {
         margin: 0;
+    }
+    #form__name__error .fa-solid {
+        display: inline;
+        color: seagreen;
     }
 }
 
@@ -332,6 +336,16 @@ body {
         background-color: #fff;
         color: #141a34;
     }
+
+    .form__row span {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .form__row span i  {
+        color: seagreen;
+        font-size: 1.2em;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -376,8 +390,8 @@ body {
         text-align: center;
     }
 
-    #form__name__error .fa-solid {
-        display: inline;
+    .form__row span i  {
         color: seagreen;
+        font-size: 1.2em;
     }
 }
