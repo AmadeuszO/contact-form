@@ -157,7 +157,7 @@ body {
     color: red;
 }
 
-.form__row span i  {
+.form__row span i {
     color: seagreen;
     font-size: .9em;
 }
@@ -192,6 +192,7 @@ body {
     .form__row textarea {
         font-size: .7em;
     }
+
     #form__name__error .fa-solid {
         display: inline;
         color: seagreen;
@@ -231,19 +232,19 @@ body {
     }
 
     .form__row input {
-        font-size: .7em;
+        font-size: .8em;
     }
 
     .form__row label {
-        font-size: .7em;
+        font-size: .8em;
     }
 
     .form__row span {
-        font-size: .7em;
+        font-size: .8em;
     }
 
     .form__row textarea {
-        font-size: .7em;
+        font-size: .8em;
     }
 
     .fa-message {
@@ -263,6 +264,7 @@ body {
     .form button {
         margin: 0;
     }
+
     #form__name__error .fa-solid {
         display: inline;
         color: seagreen;
@@ -285,7 +287,7 @@ body {
 
     .form__header__page {
         margin-bottom: 0.2em;
-        padding: 0 1em;
+        padding: 0 3em;
     }
 
     .form {
@@ -323,9 +325,20 @@ body {
         width: 20%;
         padding: 0 .5em;
     }
+    .form__row input {
+        font-size: .9em;
+    }
+
+    .form__row label {
+        font-size: .9em;
+    }
+
+    .form__row span {
+        font-size: .9em;
+    }
 
     .form__row textarea {
-        font-size: .7em;
+        font-size: .9em;
     }
 
     .fa-paper-plane {
@@ -338,11 +351,11 @@ body {
     }
 
     .form__row span {
-        font-size: 1em;
+        font-size: .9em;
         text-align: center;
     }
 
-    .form__row span i  {
+    .form__row span i {
         color: seagreen;
         font-size: 1.2em;
     }
@@ -390,7 +403,7 @@ body {
         text-align: center;
     }
 
-    .form__row span i  {
+    .form__row span i {
         color: seagreen;
         font-size: 1.2em;
     }
